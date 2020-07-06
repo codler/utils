@@ -1,0 +1,18 @@
+{
+  "name": "@codler/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "author": "Han Lin Yap (https://yap.nu)",
+  "license": "ISC",
+  "funding": {
+    "type": "individual",
+    "url": "https://yap.nu"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.6"
+  }
+}
