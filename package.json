@@ -7,12 +7,16 @@
   "license": "ISC",
   "funding": {
     "type": "individual",
-    "url": "https://yap.nu"
+    "url": "https://github.com/sponsors/codler"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json"
   },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
   "devDependencies": {
+    "react": "^16.13.1",
     "typescript": "^3.9.6"
   }
 }
