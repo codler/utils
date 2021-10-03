@@ -12,14 +12,14 @@ npm i @codler/utils
 
 ```js
 import { date } from "@codler/utils";
-date.format;
-date.today;
-date.yesterday;
-date.oneWeekAgo;
-date.oneMonthAgo;
-date.getWeek;
-date.getMondayFromWeek;
-date.getSundayFromWeek;
+date.format(new Date()); // 2020-01-01
+date.today; // 2020-01-01
+date.yesterday; // 2020-01-01
+date.oneWeekAgo; // 2020-01-01
+date.oneMonthAgo; // 2020-01-01
+date.getWeek(new Date()); // { year: 2020, week: 1 }
+date.getMondayFromWeek({ year: 2020, week: 1 }); // Date object
+date.getSundayFromWeek({ year: 2020, week: 1 }); // Date object
 ```
 
 | Method            | Notes                                          |
