@@ -2,7 +2,7 @@
   "name": "@codler/utils",
   "version": "2.0.0",
   "description": "Utils",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Han Lin Yap (https://yap.nu)",
   "license": "ISC",
   "funding": {
@@ -18,7 +18,7 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": "*"
   },
   "devDependencies": {
     "react": "^17.0.2",
