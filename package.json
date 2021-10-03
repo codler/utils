@@ -1,22 +1,30 @@
 {
   "name": "@codler/utils",
   "version": "1.1.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "Utils",
+  "main": "index.js",
   "author": "Han Lin Yap (https://yap.nu)",
   "license": "ISC",
   "funding": {
     "type": "individual",
     "url": "https://github.com/sponsors/codler"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codler/utils.git"
+  },
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.2"
   },
   "devDependencies": {
-    "react": "^16.13.1",
-    "typescript": "^3.9.6"
-  }
+    "react": "^17.0.2",
+    "typescript": "^4.4.3"
+  },
+  "keywords": [
+    "Utils"
+  ]
 }

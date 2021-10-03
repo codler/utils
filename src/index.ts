@@ -1,5 +1,5 @@
 export { default as debounce } from "./debounce";
-export { default as formattedDayDate } from "./formattedDayDate";
+export { default as date } from "./date";
 export { default as hasAdBlock, checkHasAdBlock } from "./hasAdBlock";
 export { default as platform } from "./platform";
 export { default as scaledColor, linearColor } from "./scaledColor";
