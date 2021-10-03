@@ -1,6 +1,6 @@
 {
   "name": "@codler/utils",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Utils",
   "main": "dist/index.js",
   "author": "Han Lin Yap (https://yap.nu)",
