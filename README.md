@@ -8,6 +8,19 @@ npm i @codler/utils
 
 ## Reference
 
+#### adBlock
+
+```js
+import { adBlock } from "@codler/utils";
+await adBlock.checkIsEnabled();
+adBlock.isEnabled();
+```
+
+| Method         | Notes              |
+| -------------- | ------------------ |
+| checkIsEnabled | `Promise<boolean>` |
+| isEnabled      | `boolean`          |
+
 #### date
 
 ```js
@@ -32,6 +45,18 @@ date.getSundayFromWeek({ year: 2020, week: 1 }); // Date object
 | getWeek           | `(date: Date): { year: number; week: number }` |
 | getMondayFromWeek | `({ year: number; week: number }): Date`       |
 | getSundayFromWeek | `({ year: number; week: number }): Date`       |
+
+#### debounce
+
+```js
+import { debounce } from "@codler/utils";
+debounce(() => void, 100);
+```
+
+| Parameter | Notes      |
+| --------- | ---------- |
+| func      | `function` |
+| wait      | `number`   |
 
 ## Maintainer
 

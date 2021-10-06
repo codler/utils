@@ -14,10 +14,14 @@ const initHasAdBlock = () =>
       return true;
     }));
 
-export const checkHasAdBlock = () => promise ?? initHasAdBlock();
+export const checkIsEnabled = (): Promise<boolean> =>
+  promise ?? initHasAdBlock();
 
-function hasAdBlock() {
+function isEnabled(): boolean {
   return blocked;
 }
 
-export default hasAdBlock;
+export default {
+  checkIsEnabled,
+  isEnabled,
+};

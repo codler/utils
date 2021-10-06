@@ -1,5 +1,5 @@
 const cacheFormattedDayDate: { [key: number]: string } = {};
-const format = (date: Date) =>
+const format = (date: Date): string =>
   cacheFormattedDayDate[date.getTime()] ??
   (cacheFormattedDayDate[date.getTime()] = `${date.getFullYear()}-${(
     date.getMonth() +
