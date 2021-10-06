@@ -21,6 +21,19 @@ adBlock.isEnabled();
 | checkIsEnabled | `Promise<boolean>` |
 | isEnabled      | `boolean`          |
 
+#### color
+
+```js
+import { color } from "@codler/utils";
+color.linear(value, maxValue);
+color.scaled(value, maxValue);
+```
+
+| Method | Notes                                         |
+| ------ | --------------------------------------------- |
+| linear | `(value: number, maxValue: number): hexColor` |
+| scaled | `(value: number, maxValue: number): hexColor` |
+
 #### date
 
 ```js
@@ -57,6 +70,58 @@ debounce(() => void, 100);
 | --------- | ---------- |
 | func      | `function` |
 | wait      | `number`   |
+
+#### platform
+
+```js
+import { platform } from "@codler/utils";
+platform.isIos();
+platform.isAndroid();
+```
+
+| Method    | Notes     |
+| --------- | --------- |
+| isIos     | `boolean` |
+| isAndroid | `boolean` |
+
+#### scrollToElement
+
+```js
+import { scrollTo, scrollToElement, easing } from "@codler/utils";
+// ...
+```
+
+| Method          | Notes                                                                                  |
+| --------------- | -------------------------------------------------------------------------------------- |
+| scrollTo        | `(targetPosition: number, scrollDistance: number, duration: number, easing: Function)` |
+| scrollToElement | `(node: HTMLElement, duration: number, easing: Function)`                              |
+| easing          | `{easeInQuad}`                                                                         |
+
+### React Hooks
+
+#### useInViewport
+
+```js
+import { useInViewport } from "@codler/utils";
+const { isVisible, update } = useInViewport();
+```
+
+| Variable  | Notes      |
+| --------- | ---------- |
+| isVisible | `boolean`  |
+| update    | `function` |
+
+#### useWindowSize
+
+```js
+import { useWindowSize } from "@codler/utils";
+const { width, height } = useWindowSize();
+```
+
+| Variable | Notes    |
+| -------- | -------- |
+| width    | `number` |
+| height   | `number` |
 
 ## Maintainer
 

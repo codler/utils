@@ -21,6 +21,8 @@ export default function useInViewport(ref: RefObject<Element>) {
   }, [ref]);
 
   useEffect(() => {
+    update();
+
     ["scroll", "load", "DOMContentLoaded", "resize", "click"].forEach(
       (type) => {
         window.addEventListener(type, update);

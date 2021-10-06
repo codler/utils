@@ -7,17 +7,13 @@ const format = (date: Date): string =>
     ""
   ).padStart(2, "0")}-${(date.getDate() + "").padStart(2, "0")}`);
 
-export const today = format(new Date());
-export const yesterday = format(new Date(Date.now() - 24 * 60 * 60 * 1000));
-export const oneWeekAgo = format(
-  new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
-);
-export const oneMonthAgo = format(
-  new Date(Date.now() - 30 * 24 * 60 * 60 * 1000)
-);
+const today = format(new Date());
+const yesterday = format(new Date(Date.now() - 24 * 60 * 60 * 1000));
+const oneWeekAgo = format(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000));
+const oneMonthAgo = format(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000));
 
 const cacheGetWeek: { [key: number]: { year: number; week: number } } = {};
-export const getWeek = (date: Date): { year: number; week: number } => {
+const getWeek = (date: Date): { year: number; week: number } => {
   if (cacheGetWeek[date.getTime()]) {
     return cacheGetWeek[date.getTime()];
   }
@@ -33,7 +29,7 @@ export const getWeek = (date: Date): { year: number; week: number } => {
   });
 };
 
-export const getSundayFromWeek = ({
+const getSundayFromWeek = ({
   year,
   week,
 }: {
@@ -56,7 +52,7 @@ export const getSundayFromWeek = ({
   return new Date(format(sunday));
 };
 
-export const getMondayFromWeek = ({
+const getMondayFromWeek = ({
   year,
   week,
 }: {

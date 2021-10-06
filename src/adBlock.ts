@@ -14,7 +14,7 @@ const initHasAdBlock = () =>
       return true;
     }));
 
-export const checkIsEnabled = (): Promise<boolean> =>
+const checkIsEnabled = (): Promise<boolean> =>
   promise ?? initHasAdBlock();
 
 function isEnabled(): boolean {
