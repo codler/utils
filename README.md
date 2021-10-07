@@ -111,6 +111,18 @@ const { isVisible, update } = useInViewport();
 | isVisible | `boolean`  |
 | update    | `function` |
 
+#### useLocalStorage
+
+```js
+import { useLocalStorage } from "@codler/utils";
+const [get, set] = useLocalStorage < T > (key, initialValue);
+```
+
+| Variable | Notes      |
+| -------- | ---------- |
+| get      | `T`        |
+| set      | `function` |
+
 #### useWindowSize
 
 ```js

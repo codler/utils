@@ -5,4 +5,5 @@ export { default as debounce } from "./debounce";
 export { default as platform } from "./platform";
 export { scrollTo, scrollToElement, easing } from "./scrollToElement";
 export { default as useInViewport } from "./useInViewport";
+export { default as useLocalStorage } from "./useLocalStorage";
 export { default as useWindowSize } from "./useWindowSize";
