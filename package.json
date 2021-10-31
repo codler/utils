@@ -18,11 +18,21 @@
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.9",
     "react": "*"
   },
+  "peerDependenciesMeta": {
+    "@react-native-async-storage/async-storage": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
   "devDependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.9",
     "react": "^17.0.2",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.4"
   },
   "keywords": [
     "Utils"

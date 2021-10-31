@@ -99,6 +99,19 @@ import { scrollTo, scrollToElement, easing } from "@codler/utils";
 
 ### React Hooks
 
+#### useAsyncStorage
+
+```js
+import { useAsyncStorage } from "@codler/utils";
+const [get, set, isInit] = useAsyncStorage < T > (key, initialValue);
+```
+
+| Variable | Notes      |
+| -------- | ---------- |
+| get      | `T`        |
+| set      | `function` |
+| isInit   | `boolean`  |
+
 #### useInViewport
 
 ```js
